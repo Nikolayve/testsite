@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content">
+    <name>Content - Hot Maps</name>
+    <author>HotJoomlaTemplates.com</author>
+    <creationDate>June 2011</creationDate>
+    <copyright>Copyright 2011 by ArhiNet d.o.o.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+    <authorEmail>info@hotjoomlatemplates.com</authorEmail>
+    <authorUrl>http://www.hotjoomlatemplates.com</authorUrl>
+    <version>1.0</version>
+    <description>Include Google maps into your Joomla pages with this plugin. Enter location (or address), map's width/height and you're done in less than a minute!</description>
+    <files>
+        <filename plugin="hotmaps">hotmaps.php</filename>
+		<filename>index.html</filename>
+    </files>
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="satellite" type="list" default="0" label="Satellite Images" description="Select whether to use satellite images or not.">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="link_enable" type="list" default="1" label="Display Link" description="Select whether to show link to full map or not.">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="link_text" type="text" default="View Larger Map" label="Link Text" description="Enter link text." />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

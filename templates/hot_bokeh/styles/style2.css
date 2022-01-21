@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------------
+# "Hot Bokeh" - Commercial Joomla Template
+# Copyright (C) 2013 HotThemes. All Rights Reserved.
+# License: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+# Author: HotThemes
+# Website: http://www.hotjoomlatemplates.com
+-------------------------------------------------------------------------*/
+
+h1, h1 a, h1 span,
+.mp_user3 h3,
+.mod-articles-category-writtenby,
+.mod-articles-category-date,
+a {
+	color: #3399cc;
+}
+
+.mnu_mainmenu > li.active > a,
+.mnu_mainmenu > li.active > span {
+	color: #3399cc !important;
+}
+
+p.readmore a, p.mod-articles-category-readmore a, ul.pagenav a {
+	background-color: #3399cc;
+	box-shadow: 0 -2px 1px #006699 inset,0 2px 1px rgba(0,0,0,0.05);
+}
+
+p.readmore a:hover, p.mod-articles-category-readmore a:hover, ul.pagenav a:hover {
+	-webkit-box-shadow: 0 2px 1px #006699 inset;
+	-moz-box-shadow: 0 2px 1px #006699 inset;
+	box-shadow: 0 2px 1px #006699 inset;
+}
+
+.toprow.fix_menu .mp_logo img {
+	content: url(../images/logo_small2.png);
+}
+
+.sparky_inner .toprow {
+	background: url(../images/custom/topmenu_bg2.jpg) no-repeat;
+}
+

@@ -1,0 +1,18 @@
+<h3>Layout Designer</h3>
+<p><strong>Template Width</strong></p>
+<p>Use the slider to set overall template width. It's possible to select only numbers divisible with 12.</p>
+<p><strong>Layout editor</strong></p>
+<p>All module positions are shown as module blocks (small rectangles). Layout has rows and each row can hold 1 to 12 columns.</p>
+<p>1. To start, click "+ ROW" to make some rows.<br/>
+2. Drag a module block into the row and adjust its width (click on its right edge and move left).<br/>
+3. Drag the second module block into the remaining space and so on...<br/>
+4. If you need to move a module block left/right, click on the arrows in the blocks lower left corner.<br/>
+5. If you need to remove a module block from the row, drag it back to the un-assigned modules.
+</p>
+<p>Each row that you create will be a DIV element (full screen width) with class .sparky_full. To add ID or class or of the row, enter it in the left side of the row.</p>
+<p>Inside DIV.sparky_full, there's DIV.sparky_main which has the width of the template.</p>
+<p>Inside DIV.sparky_main, there're DIVs with module positions. Each of those DIVs has class .cell and class .mp_positionname. So, you can style each module position by using this unique class. Inside DIV.cell.mp_positionname, there's DIV.cell_pad which allows you to add desired padding for each module position.</p>
+<p><strong>Paddings and Margins</strong></p>
+<p>The last four options represent the global settings for paddings and margins. This can be overridden for certain rows if you add class to those rows and then set different paddings and margins in layout.css file.</p>
+<hr/>
+<p>Thank you for developing with<br/>Sparky Framework by <a href="http://www.hotjoomlatemplates.com">HotThemes</a></p>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="koowa" method="upgrade">
+	<name>DOCman - CComment Plugin</name>
+	<author>Compojoom</author>
+	<creationDate>2015-12-17</creationDate>
+	<copyright>Copyright (c) 2008 - 2015 Compojoom.com. All rights reserved.</copyright>
+	<authorEmail>daniel@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<version>5.3.5</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>CComment plugin for docman</description>
+	<files>
+		<file plugin="ccomment">ccomment.php</file>
+	</files>
+	<params>
+	</params>
+</extension>

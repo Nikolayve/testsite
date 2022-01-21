@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="community" method="upgrade">
+	<name>CComment Walls</name>
+	<author>Compojoom</author>
+	<creationDate>2015-12-17</creationDate>
+	<copyright>Copyright (C) 2008 - 2013 compojoom.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>services@compojoom.com</authorEmail>
+	<authorUrl>http://compojoom.com</authorUrl>
+	<version>5.3.5</version>
+	<isapplication>true</isapplication>
+	<description>
+		CComment Walls for JomSocial © compojoom 2013
+	</description>
+	<files>
+		<file plugin="compojoomwalls">compojoomwalls.php</file>
+	</files>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="coreapp" type="list" default="0" label="Core Application" description="Causes this application to not appearin the users applications list but it will allow this application to appear in the user profile automatically if selected.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this plugin">
+					<option value="1">Use Global</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

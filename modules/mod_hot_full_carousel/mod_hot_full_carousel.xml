@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	  type="module"
+	  version="2.5"
+	  client="site"
+	  method="upgrade">
+	  
+	<name>Hot Full Carousel</name> 
+	<author>HotThemes</author> 
+	<creationDate>2013-03-25</creationDate> 
+	<copyright>Copyright 2013 by HotThemes</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@hotjoomlatemplates.com</authorEmail> 
+	<authorUrl>http://www.hotjoomlatemplates.com</authorUrl> 
+	<version>2.5.11</version> 
+	<description>Hot Full Carousel - Commercial Joomla module from HotThemes</description>
+	
+	<files>
+		<filename module="mod_hot_full_carousel">mod_hot_full_carousel.php</filename>
+		<filename>index.html</filename>
+		<folder>elements</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_hot_full_carousel.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_hot_full_carousel/elements">
+			<fieldset name="system" label="LABEL SYSTEM SETTINGS">
+				<field type="loader" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="enablejQuery" type="list" default="1" label="LABEL JQUERY" description="DESC JQUERY">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="noConflict" type="list" default="1" label="LABEL NO CONFLICT" description="DESC NO CONFLICT">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="linkNewWindow" type="list" default="0" label="LABEL LINK NEW WINDOW" description="DESC LINK NEW WINDOW">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="responsiveMode" type="list" default="0" label="LABEL FULL MODE" description="DESC FULL MODE">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="moduleWidth" type="text" default="700" label="LABEL MODULE WIDTH" description="DESC MODULE WIDTH" />
+				<field name="moduleHeight" type="text" default="480" label="LABEL MODULE HEIGHT" description="DESC MODULE HEIGHT" />
+				<field name="textAreaWidth" type="text" default="50" label="LABEL TEXT AREA WIDTH" description="DESC TEXT AREA WIDTH" />
+				<field name="textAreaLeft" type="text" default="24" label="LABEL TEXT AREA LEFT" description="DESC TEXT AREA LEFT" />
+				<field name="textAreaTop" type="text" default="80" label="LABEL TEXT AREA TOP" description="DESC TEXT AREA TOP" />
+				<field name="textAreaPadding" type="text" default="1" label="LABEL TEXT PADDING" description="DESC TEXT PADDING" />
+				<field name="borderRadius" type="text" default="10" label="LABEL BORDER RADIUS" description="DESC BORDER RADIUS" />
+			</fieldset>
+			<fieldset name="style" label="LABEL STYLE">
+				<field name="boxBgColor" type="text" default="255,255,255" label="LABEL BOX BG COLOR" description="DESC BOX BG COLOR" />
+				<field name="boxTransparency" type="text" default="0.8" label="LABEL BOX TRANSPARENCY" description="DESC BOX TRANSPARENCY" />
+				<field name="textColor" type="hotcolor" default="#000000" label="LABEL TEXT COLOR" description="LABEL COLOR" />
+				<field name="headingSize" type="text" default="24" label="LABEL HEADING SIZE" description="DESC TEXT SIZE" />
+				<field name="textSize" type="text" default="12" label="LABEL TEXT SIZE" description="DESC TEXT SIZE" />
+			</fieldset>
+			<fieldset name="navigation" label="LABEL NAVIGATION">
+				<field name="navArrows" type="list" default="1" label="LABEL NAVIGATION ARROWS">
+					<option value="0">Disabled</option>
+					<option value="1">Visible on Hover</option>
+					<option value="2">Always Visible</option>
+				</field>
+				<field name="arrowBottom" type="text" default="10" label="LABEL ARROW BOTTOM" description="DESC ARROW BOTTOM" />
+				<field name="arrowSide" type="text" default="10" label="LABEL ARROW SIDE" description="DESC ARROW SIDE" />
+				<field name="arrowLeftText" type="text" default="Previous" label="LABEL LEFT ARROW TEXT" />
+				<field name="arrowRightText" type="text" default="Next" label="LABEL RIGHT ARROW TEXT" />
+				<field name="navBg" type="text" default="0,0,0" label="LABEL NAV BG"  description="DESC NAV BG" />
+				<field name="navTransparency" type="text" default="0.7" label="LABEL NAV TRANSPARENCY"  description="DESC NAV TRANSPARENCY" />
+				<field name="navBgHover" type="hotcolor" default="#89051C" label="LABEL NAV BG HOVER" description="LABEL COLOR" />
+				<field name="navWidth" type="text" default="80" label="LABEL NAV WIDTH" description="LABEL NAV WIDTH" />
+				<field name="navHeight" type="text" default="40" label="LABEL NAV HEIGHT" description="LABEL NAV HEIGHT" />
+				<field name="navTextColor" type="hotcolor" default="#FFFFFF" label="LABEL NAV TEXT COLOR" description="LABEL COLOR" />
+				<field name="navTextSize" type="text" default="20" label="LABEL NAV TEXT SIZE" />
+				<field name="navBorderRadius" type="text" default="20" label="LABEL NAV BORDER RADIUS" description="DESC NAV BORDER RADIUS" />
+			</fieldset>
+			<fieldset name="animation" label="LABEL ANIMATION">
+				<field name="animSpeed" type="text" default="1000" label="LABEL ANIM SPEED" description="DESC ANIM SPEED" />
+				<field name="pauseTime" type="text" default="5000" label="LABEL PAUSE" description="DESC PAUSE" />
+				<field name="easing" type="list" default="easeOutExpo" label="LABEL EASING" description="DESC EASING">
+					<option value="easeOutExpo">easeOutExpo</option>
+					<option value="easeOutQuad">easeOutQuad</option>
+					<option value="easeOutCubic">easeOutCubic</option>
+					<option value="easeOutQuart">easeOutQuart</option>
+					<option value="easeOutQuint">easeOutQuint</option>
+					<option value="easeOutSine">easeOutSine</option>
+					<option value="easeOutCirc">easeOutCirc</option>
+					<option value="easeOutElastic">easeOutElastic</option>
+					<option value="easeOutBack">easeOutBack</option>
+					<option value="easeOutBounce">easeOutBounce</option>
+				</field>
+			</fieldset>
+			<fieldset name="image1" label="LABEL IMAGE1">
+				<field name="enableSlide1" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image1" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt1" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading1" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText1" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image1link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image1title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image2" label="LABEL IMAGE2">
+				<field name="enableSlide2" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image2" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt2" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading2" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText2" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image2link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image2title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image3" label="LABEL IMAGE3">
+				<field name="enableSlide3" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image3" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt3" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading3" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText3" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image3link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image3title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image4" label="LABEL IMAGE4">
+				<field name="enableSlide4" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image4" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt4" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading4" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText4" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image4link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image4title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image5" label="LABEL IMAGE5">
+				<field name="enableSlide5" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image5" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt5" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading5" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText5" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image5link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image5title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image6" label="LABEL IMAGE6">
+				<field name="enableSlide6" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image6" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt6" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading6" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText6" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image6link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image6title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image7" label="LABEL IMAGE7">
+				<field name="enableSlide7" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image7" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt7" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading7" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText7" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image7link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image7title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image8" label="LABEL IMAGE8">
+				<field name="enableSlide8" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image8" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt8" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading8" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText8" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image8link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image8title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image9" label="LABEL IMAGE9">
+				<field name="enableSlide9" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image9" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt9" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading9" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText9" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image9link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image9title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image10" label="LABEL IMAGE10">
+				<field name="enableSlide10" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image10" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt10" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading10" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText10" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image10link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image10title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image11" label="LABEL IMAGE11">
+				<field name="enableSlide11" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image11" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt11" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading11" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText11" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image11link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image11title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image12" label="LABEL IMAGE12">
+				<field name="enableSlide12" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image12" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt12" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading12" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText12" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image12link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image12title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image13" label="LABEL IMAGE13">
+				<field name="enableSlide13" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image13" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt13" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading13" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText13" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image13link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image13title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image14" label="LABEL IMAGE14">
+				<field name="enableSlide14" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image14" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt14" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading14" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText14" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image14link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image14title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image15" label="LABEL IMAGE15">
+				<field name="enableSlide15" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image15" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt15" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading15" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText15" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image15link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image15title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image16" label="LABEL IMAGE16">
+				<field name="enableSlide16" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image16" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt16" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading16" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText16" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image16link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image16title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image17" label="LABEL IMAGE17">
+				<field name="enableSlide17" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image17" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt17" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading17" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText17" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image17link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image17title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image18" label="LABEL IMAGE18">
+				<field name="enableSlide18" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image18" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt18" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading18" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText18" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image18link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image18title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image19" label="LABEL IMAGE19">
+				<field name="enableSlide19" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image19" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt19" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading19" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText19" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image19link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image19title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+			<fieldset name="image20" label="LABEL IMAGE20">
+				<field name="enableSlide20" type="list" default="false" label="LABEL ENABLE SLIDE" description="DESC ENABLE SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="image20" type="media" default="" label="LABEL IMAGE" />
+				<field name="imageAlt20" type="text" default="" label="LABEL IMAGE ALT" />
+				<field name="imageHeading20" type="text" default="" label="LABEL HEADING" />
+				<field name="imageText20" type="textarea" cols="30" rows="3" default="" label="LABEL TEXT" description="DESC TEXT" filter="raw" />
+				<field name="image20link" type="text" default="" label="LABEL IMAGE LINK" description="DESC IMAGE LINK" />
+				<field name="image20title" type="text" default="" label="LABEL IMAGE TITLE" description="DESC IMAGE TITLE" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

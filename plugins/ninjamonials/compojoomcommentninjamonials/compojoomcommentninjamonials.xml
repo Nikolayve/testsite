@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="ninjamonials" method="upgrade">
+	<name>Ninjamonials - CComment</name>
+	<author>Daniel Dimitrov</author>
+	<creationDate>2015-12-17</creationDate>
+	<copyright>Copyright(C) Compojoom.com . All rights reserved!</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>daniel@compojoom.com</authorEmail>
+	<authorUrl>www.compojoom.com</authorUrl>
+	<version>5.3.5</version>
+	<description/>
+	<files>
+		<file plugin="compojoomcommentninjamonials">compojoomcommentninjamonials.php</file>
+	</files>
+</extension>

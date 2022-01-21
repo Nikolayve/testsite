@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="dpcalendar" method="upgrade">
+	<name>DPCalendar - CComment</name>
+	<author>Daniel Dimitrov</author>
+	<creationDate>2015-12-17</creationDate>
+	<copyright>Copyright(C) compojoom.com - Daniel Dimitrov All rights reserved!</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>daniel@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<version>5.3.5</version>
+	<description>You need to enable this plugin if you want to have comments in DPCalendar
+	</description>
+	<languages folder="administrator/language">
+		
+	</languages>
+	<files>
+		<file plugin="ccomment">ccomment.php</file>
+	</files>
+	<config>
+
+	</config>
+</extension>

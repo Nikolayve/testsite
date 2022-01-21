@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="compojoomcomment" method="upgrade">
+	<name>CComment - JomSocial features</name>
+	<author>Compojoom</author>
+	<creationDate>2015-12-17</creationDate>
+	<copyright>Copyright (C) 2013 - compojoom.com . All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>daniel@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<version>5.3.5</version>
+	<isapplication>true</isapplication>
+	<description>
+		This plugin allows you to use JomSocial's User Point and Activity Stream in compojoomComment
+	</description>
+	<languages folder="administrator/language">
+		<language tag="en-GB">en-GB/en-GB.plg_compojoomcomment_jomsocial.ini</language>
+	</languages>
+	<files>
+		<file plugin="jomsocial">jomsocial.php</file>
+	</files>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="activityStreamNewComment" type="list" default="1" label="Activity Stream new comment" description="User activity such as adding new comment will be published in the user profile">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="activityStreamDeleteComment" type="list" default="1" label="Activity Stream delete comment" description="User activity such as deleting comment will be published in the user profile">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="activityStreamVoteComment" type="list" default="1" label="Activity Stream vote comment" description="User activity such as voting on a comment will be published in the user profile">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="userPointsOnComment" type="list" default="1" label="User Points new Comment" description="Select whether the user should receive points for new comment">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="userPointsOnVote" type="list" default="1" label="User Points on Vote" description="Select whether the user should receive points for voting on comment">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="userPointsOnCommentDelete" type="list" default="1" label="User Points on Vote" description="Select whether the user should receive points for voting on comment">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+
+				<field name="commentLength" type="text" default="100" label="Comment length"
+				       description="Specify how long the comment should be." />
+			</fieldset>
+			
+		</fields>
+	</config>
+</extension>

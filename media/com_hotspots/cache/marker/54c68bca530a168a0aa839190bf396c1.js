@@ -1,0 +1,1 @@
+var HotspotsMarker = {"id":"10","lat":49.945259,"lng":36.262024,"title":"Sun Mall","description":"<strong>Sun Mall<\/strong><br\/><br\/>\r\n\r\n","icon":"http:\/\/karta-kh\/media\/com_hotspots\/images\/categories\/1454220931_S_candy.png"};

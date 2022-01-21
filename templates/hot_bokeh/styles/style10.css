@@ -1,0 +1,79 @@
+/*------------------------------------------------------------------------
+# "Hot Bokeh" - Commercial Joomla Template
+# Copyright (C) 2013 HotThemes. All Rights Reserved.
+# License: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+# Author: HotThemes
+# Website: http://www.hotjoomlatemplates.com
+-------------------------------------------------------------------------*/
+
+body {
+	background-color: #000;
+	color: #999;
+}
+
+a {
+	color: #f96666;
+}
+
+a:hover {
+	color: #fff;
+}
+
+.userrow {
+	background: #222;
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #111;
+}
+
+.rowfooter, .rowc {
+	background: #000;
+}
+
+.mp_user2 {
+	border-left: 1px solid #111;
+}
+
+.sparky_home h1, h2, h2 a, h3, h4 {
+	color: #bbb;
+}
+
+.sparky_home h2, .sparky_home h2 a, .items-row h2, .items-row h2 a, .category-module h2, .category-module h2 a {
+	color: #bbb;
+}
+
+h1, h1 a, h1 span,
+.mp_user3 h3,
+.mod-articles-category-writtenby,
+.mod-articles-category-date {
+	color: #666;
+}
+
+.mnu_mainmenu > li.active > a,
+.mnu_mainmenu > li.active > span {
+	color: #ccc !important;
+}
+
+p.readmore a, p.mod-articles-category-readmore a, ul.pagenav a {
+	background-color: #999;
+	box-shadow: 0 -2px 1px #666 inset,0 2px 1px rgba(0,0,0,0.05);
+	color: #fff !important;
+}
+
+p.readmore a.btn:hover, p.mod-articles-category-readmore a:hover, ul.pagenav a:hover {
+	-webkit-box-shadow: 0 2px 1px #666 inset;
+	-moz-box-shadow: 0 2px 1px #666 inset;
+	box-shadow: 0 2px 1px #666 inset;
+	color: #fff !important;
+}
+
+.toprow.fix_menu .mp_logo img {
+	content: url(../images/logo_small9.png);
+}
+
+.sparky_inner .toprow {
+	background: url(../images/custom/topmenu_bg10.jpg) no-repeat;
+}
+
+.contact a:hover {
+	color: #333;
+}

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+
+	<name>hot_bokeh</name>
+	<author>HotThemes</author>
+	<copyright>Copyright 2013 by HotThemes</copyright>
+	<authorEmail>info@hotjoomlatemplates.com</authorEmail>
+	<authorUrl>http://www.hotjoomlatemplates.com</authorUrl>
+	<version>1.0</version>
+	<description>Hot Bokeh - Commercial Joomla template by HotThemes</description>
+	<creationDate>October 2013</creationDate>
+	
+	<files>
+		<filename>component.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css/</folder>
+		<folder>elements/</folder>
+		<folder>export/</folder>
+		<folder>help/</folder>
+		<folder>html/</folder>
+		<folder>images/</folder>
+		<folder>img/</folder>
+		<folder>js/</folder>
+		<folder>language/</folder>
+		<folder>library/</folder>
+		<folder>styles/</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB.tpl_hot_bokeh.ini</language>
+	</languages>
+	
+	<positions>
+		<position>abovecontent</position>
+		<position>belowcontent</position>
+		<position>logo</position>
+		<position>fontresize</position>
+		<position>advert1</position>
+		<position>advert2</position>
+		<position>advert3</position>
+		<position>advert4</position>
+		<position>advert5</position>
+		<position>advert6</position>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>bottom4</position>
+		<position>bottom5</position>
+		<position>bottom6</position>
+		<position>breadcrumbs</position>
+		<position>copyright</position>
+		<position>footer</position>
+		<position>header1</position>
+		<position>header2</position>
+		<position>header3</position>
+		<position>header4</position>
+		<position>header5</position>
+		<position>header6</position>
+		<position>left</position>
+		<position>right</position>
+		<position>search</position>
+		<position>top1</position>
+		<position>top2</position>
+		<position>top3</position>
+		<position>top4</position>
+		<position>top5</position>
+		<position>top6</position>
+		<position>topmenu</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+	</positions>
+	
+	<config>
+		<fields name="params" addfieldpath="/templates/hot_bokeh/elements">
+			<fieldset name="layoutdesign" label="TPL_HOT_BOKEH_LAYOUT_DESIGN">
+				<field type="tadmin"/>
+				<field name="templateWidth" type="width" default="960" label="TPL_HOT_BOKEH_TEMPLATE_WIDTH_LBL" description="TPL_HOT_BOKEH_TEMPLATE_WIDTH_DESC"/>
+				<field name="fluidWidth" type="flipyesno" default="0" label="TPL_HOT_BOKEH_FLUID_WIDTH_LBL" description="TPL_HOT_BOKEH_FLUID_WIDTH_DESC"/>
+				<field name="layoutdesign" type="designlayout" label="TPL_HOT_BOKEH_LAYOUT_DESIGN_LBL" description="TPL_HOT_BOKEH_LAYOUT_DESIGN_DESC" default=""/>
+				<field name="cellPaddingHorizontal" type="text" default="0" label="TPL_HOT_BOKEH_CELL_PADDING_HORIZONTAL_LBL" description="TPL_HOT_BOKEH_CELL_PADDING_HORIZONTAL_DESC" size="3"/>
+				<field name="cellPaddingVertical" type="text" default="0" label="TPL_HOT_BOKEH_CELL_PADDING_VERTICAL_LBL" description="TPL_HOT_BOKEH_CELL_PADDING_VERTICAL_DESC" size="3"/>
+				<field name="cellMarginHorizontal" type="text" default="10" label="TPL_HOT_BOKEH_CELL_MARGIN_HORIZONTAL_LBL" description="TPL_HOT_BOKEH_CELL_MARGIN_HORIZONTAL_DESC" size="3"/>
+				<field name="cellMarginVertical" type="text" default="0" label="TPL_HOT_BOKEH_CELL_MARGIN_VERTICAL_LBL" description="TPL_HOT_BOKEH_CELL_MARGIN_VERTICAL_DESC" size="3"/>
+				<field name="textDirection" type="list" default="ltr" label="TPL_HOT_BOKEH_TEXT_DIRECTION" description="TPL_HOT_BOKEH_BG_IMAGE_VERTICAL_ALIGN_DESC">
+					<option value="ltr">TPL_HOT_BOKEH_TEXT_DIRECTION_LTR</option>
+					<option value="rtl">TPL_HOT_BOKEH_TEXT_DIRECTION_RTL</option>
+				</field>
+			</fieldset>
+			<fieldset name="fontsettings" label="TPL_HOT_BOKEH_STYLE_DESIGNER">
+				<field name="subtabstart1" type="subtabstart" default="" label="TPL_HOT_BOKEH_FEATURES_BACKGROUND_LBL"/>
+					<field name="bodyBgColor" type="hotcolor" label="TPL_HOT_BOKEH_BODY_BG_LBL" description="TPL_HOT_BOKEH_COLOR_DESC" default="#FFFFFF"/>
+					<field name="bodyBgImageSwitch" type="flipyesno" default="0" label="TPL_HOT_BOKEH_BODY_BG_IMAGE_SWITCH_LBL" description="TPL_HOT_BOKEH_BODY_BG_IMAGE_SWITCH_DESC"/>
+					<field name="bodyBgImageFile" type="imagelist" directory="templates/hot_bokeh/images" label="TPL_HOT_BOKEH_BODY_BG_IMAGE_FILE_LBL"/>
+					<field name="bodyBgImageVerticalAlign" type="list" default="top" label="TPL_HOT_BOKEH_BG_IMAGE_VERTICAL_ALIGN_LBL" description="TPL_HOT_BOKEH_BG_IMAGE_VERTICAL_ALIGN_DESC">
+						<option value="top">Top</option>
+						<option value="center">Center</option>
+						<option value="bottom">Bottom</option>
+					</field>
+					<field name="bodyBgImageHorizontalAlign" type="list" default="center" label="TPL_HOT_BOKEH_BG_IMAGE_HORZONTAL_ALIGN_LBL" description="TPL_HOT_BOKEH_BG_IMAGE_HORIZONTAL_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="bodyBgImageRepeat" type="list" default="repeat" label="TPL_HOT_BOKEH_BG_IMAGE_REPEAT_LBL" description="TPL_HOT_BOKEH_BG_IMAGE_REPEAT_DESC">
+						<option value="repeat">TPL_HOT_BOKEH_BG_IMAGE_REPEAT_REPEAT_LBL</option>
+						<option value="repeat-x">TPL_HOT_BOKEH_BG_IMAGE_REPEAT_REPEAT_HORIZONTALLY_LBL</option>
+						<option value="repeat-y">TPL_HOT_BOKEH_BG_IMAGE_REPEAT_REPEAT_VERTICALLY_LBL</option>
+						<option value="no-repeat">TPL_HOT_BOKEH_BG_IMAGE_REPEAT_NO_REPEAT_LBL</option>
+					</field>
+					<field name="bodyBgImageFixedSwitch" type="flipyesno" default="" label="TPL_HOT_BOKEH_BODY_BG_IMAGE_FIXED_SWITCH_LBL" description="TPL_HOT_BOKEH_BODY_BG_IMAGE_FIXED_SWITCH_DESC"/>
+					<field name="containerBgColor" type="hotcolor" label="TPL_HOT_BOKEH_CONTAINER_BG_LBL" description="TPL_HOT_BOKEH_COLOR_DESC" default="transparent"/>
+				<field name="subtabstart2" type="subtabstart" default="" label="TPL_HOT_BOKEH_H1_LBL"/>
+					<field name="h1Color" type="hotcolor" default="#333333" label="TPL_HOT_BOKEH_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="h1Size" type="text" default="60" label="TPL_HOT_BOKEH_FONT_SIZE_LBL" description="TPL_HOT_BOKEH_FONT_SIZE_DESC" size="3"/>
+					<field name="h1Family" type="text" default="Arial, Helvetica, sans-serif" label="TPL_HOT_BOKEH_FONT_FAMILY_LBL" description="TPL_HOT_BOKEH_FONT_FAMILY_DESC"/>
+					<field name="h1Align" type="list" default="left" label="TPL_HOT_BOKEH_TEXT_ALIGN_LBL" description="TPL_HOT_BOKEH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="h1Weight" type="list" default="bold" label="TPL_HOT_BOKEH_FONT_WEIGHT_LBL" description="TPL_HOT_BOKEH_FONT_WEIGHT_DESC">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="normal">Normal</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="bold">Bold</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+					</field>
+					<field name="h1Style" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_STYLE_LBL" description="TPL_HOT_BOKEH_FONT_STYLE_DESC">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+					</field>
+					<field name="h1Underline" type="flipyesno" default="0" label="TPL_HOT_BOKEH_FONT_UNDERLINE_LBL" description="TPL_HOT_BOKEH_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart3" type="subtabstart" default="" label="TPL_HOT_BOKEH_H2_LBL"/>
+					<field name="h2Color" type="hotcolor" default="#333333" label="TPL_HOT_BOKEH_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="h2Size" type="text" default="32" label="TPL_HOT_BOKEH_FONT_SIZE_LBL" description="TPL_HOT_BOKEH_FONT_SIZE_DESC" size="3"/>
+					<field name="h2Family" type="text" default="Arial, Helvetica, sans-serif" label="TPL_HOT_BOKEH_FONT_FAMILY_LBL" description="TPL_HOT_BOKEH_FONT_FAMILY_DESC"/>
+					<field name="h2Align" type="list" default="left" label="TPL_HOT_BOKEH_TEXT_ALIGN_LBL" description="TPL_HOT_BOKEH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="h2Weight" type="list" default="bold" label="TPL_HOT_BOKEH_FONT_WEIGHT_LBL" description="TPL_HOT_BOKEH_FONT_WEIGHT_DESC">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="normal">Normal</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="bold">Bold</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+					</field>
+					<field name="h2Style" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_STYLE_LBL" description="TPL_HOT_BOKEH_FONT_STYLE_DESC">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+					</field>
+					<field name="h2Underline" type="flipyesno" default="0" label="TPL_HOT_BOKEH_FONT_UNDERLINE_LBL" description="TPL_HOT_BOKEH_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart4" type="subtabstart" default="" label="TPL_HOT_BOKEH_H3_LBL"/>
+					<field name="h3Color" type="hotcolor" default="#333333" label="TPL_HOT_BOKEH_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="h3Size" type="text" default="24" label="TPL_HOT_BOKEH_FONT_SIZE_LBL" description="TPL_HOT_BOKEH_FONT_SIZE_DESC" size="3"/>
+					<field name="h3Family" type="text" default="Arial, Helvetica, sans-serif" label="TPL_HOT_BOKEH_FONT_FAMILY_LBL" description="TPL_HOT_BOKEH_FONT_FAMILY_DESC"/>
+					<field name="h3Align" type="list" default="left" label="TPL_HOT_BOKEH_TEXT_ALIGN_LBL" description="TPL_HOT_BOKEH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="h3Weight" type="list" default="bold" label="TPL_HOT_BOKEH_FONT_WEIGHT_LBL" description="TPL_HOT_BOKEH_FONT_WEIGHT_DESC">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="normal">Normal</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="bold">Bold</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+					</field>
+					<field name="h3Style" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_STYLE_LBL" description="TPL_HOT_BOKEH_FONT_STYLE_DESC">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+					</field>
+					<field name="h3Underline" type="flipyesno" default="0" label="TPL_HOT_BOKEH_FONT_UNDERLINE_LBL" description="TPL_HOT_BOKEH_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart5" type="subtabstart" default="" label="TPL_HOT_BOKEH_H4_LBL"/>
+					<field name="h4Color" type="hotcolor" default="#333333" label="TPL_HOT_BOKEH_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="h4Size" type="text" default="14" label="TPL_HOT_BOKEH_FONT_SIZE_LBL" description="TPL_HOT_BOKEH_FONT_SIZE_DESC" size="3"/>
+					<field name="h4Family" type="text" default="Arial, Helvetica, sans-serif" label="TPL_HOT_BOKEH_FONT_FAMILY_LBL" description="TPL_HOT_BOKEH_FONT_FAMILY_DESC"/>
+					<field name="h4Align" type="list" default="left" label="TPL_HOT_BOKEH_TEXT_ALIGN_LBL" description="TPL_HOT_BOKEH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="h4Weight" type="list" default="bold" label="TPL_HOT_BOKEH_FONT_WEIGHT_LBL" description="TPL_HOT_BOKEH_FONT_WEIGHT_DESC">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="normal">Normal</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="bold">Bold</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+					</field>
+					<field name="h4Style" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_STYLE_LBL" description="TPL_HOT_BOKEH_FONT_STYLE_DESC">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+					</field>
+					<field name="h4Underline" type="flipyesno" default="0" label="TPL_HOT_BOKEH_FONT_UNDERLINE_LBL" description="TPL_HOT_BOKEH_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart6" type="subtabstart" default="" label="TPL_HOT_BOKEH_P_LBL"/>
+					<field name="pColor" type="hotcolor" default="#333333" label="TPL_HOT_BOKEH_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="pSize" type="text" default="14" label="TPL_HOT_BOKEH_FONT_SIZE_LBL" description="TPL_HOT_BOKEH_FONT_SIZE_DESC" size="3"/>
+					<field name="pFamily" type="text" default="Arial, Helvetica, sans-serif" label="TPL_HOT_BOKEH_FONT_FAMILY_LBL" description="TPL_HOT_BOKEH_FONT_FAMILY_DESC"/>
+					<field name="pAlign" type="list" default="left" label="TPL_HOT_BOKEH_TEXT_ALIGN_LBL" description="TPL_HOT_BOKEH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+						<option value="justify">Justify</option>
+					</field>
+					<field name="pWeight" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_WEIGHT_LBL" description="TPL_HOT_BOKEH_FONT_WEIGHT_DESC">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="normal">Normal</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="bold">Bold</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+					</field>
+					<field name="pStyle" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_STYLE_LBL" description="TPL_HOT_BOKEH_FONT_STYLE_DESC">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+					</field>
+				<field name="subtabstart7" type="subtabstart" default="" label="TPL_HOT_BOKEH_LINKS_LBL"/>
+					<field name="linksColor" type="hotcolor" default="#8B1E20" label="TPL_HOT_BOKEH_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="linksHoverColor" type="hotcolor" default="#333333" label="TPL_HOT_BOKEH_HOVER_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="linksWeight" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_WEIGHT_LBL" description="TPL_HOT_BOKEH_FONT_WEIGHT_DESC">
+						<option value="normal">Normal</option>
+						<option value="bold">Bold</option>
+					</field>
+					<field name="linksStyle" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_STYLE_LBL" description="TPL_HOT_BOKEH_FONT_STYLE_DESC">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="normal">Normal</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="bold">Bold</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+					</field>
+					<field name="linksUnderline" type="flipyesno" default="0" label="TPL_HOT_BOKEH_FONT_UNDERLINE_LBL" description="TPL_HOT_BOKEH_FONT_UNDERLINE_DESC"/>
+					<field name="linksUnderlineHover" type="flipyesno" default="0" label="TPL_HOT_BOKEH_FONT_UNDERLINE_HOVER_LBL" description="TPL_HOT_BOKEH_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart8" type="subtabstart" default="" label="TPL_HOT_BOKEH_SELECT_STYLE"/>
+					<field name="templateStyle" type="list" default="0" label="TPL_HOT_BOKEH_SELECT_TEMPLATE_STYLE">
+						<option value="0">Style 1</option>
+						<option value="2">Style 2</option>
+						<option value="3">Style 3</option>
+						<option value="4">Style 4</option>
+						<option value="5">Style 5</option>
+						<option value="6">Style 6</option>
+						<option value="7">Style 7</option>
+						<option value="8">Style 8</option>
+						<option value="9">Style 9</option>
+						<option value="10">Style 10</option>
+					</field>
+					<field name="randomizeCssLink" type="flipyesno" default="1" label="TPL_HOT_BOKEH_RANDOMIZE_CSS_LINK_LBL" description="TPL_HOT_BOKEH_RANDOMIZE_CSS_LINK_DESC"/>
+			</fieldset>
+			<fieldset name="features" label="TPL_HOT_BOKEH_FEATURES">
+				<field name="subtabstart1" type="subtabstart" default="" label="TPL_HOT_BOKEH_FEATURES_LOGO_LBL"/>
+					<field name="logoImageSpacer" type="hotspacer" label="TPL_HOT_BOKEH_LOGO_IMAGE_SETTINGS_LBL"/>
+					<field name="logoImageSwitch" type="flipyesno" default="0" label="TPL_HOT_BOKEH_LOGO_IMAGE_SWITCH_LBL" description="TPL_HOT_BOKEH_LOGO_IMAGE_SWITCH_DESC"/>
+					<field name="logoImageFile" type="imagelist" directory="templates/hot_bokeh/images" default="logo.png" label="TPL_HOT_BOKEH_LOGO_IMAGE_FILE_LBL"/>
+					<field name="logoImageAlt" type="text" label="TPL_HOT_BOKEH_LOGO_IMAGE_ALT_LBL" description="TPL_HOT_BOKEH_LOGO_IMAGE_ALT_DESC" default="Sparky"/>
+					<field name="logoTextSpacer" type="hotspacer" label="TPL_HOT_BOKEH_LOGO_SETTINGS_LBL"/>
+					<field name="logoText" type="text" label="TPL_HOT_BOKEH_LOGO_TEXT_LBL" description="TPL_HOT_BOKEH_LOGO_TEXT_DESC" default="Sparky"/>
+					<field name="logoColor" type="hotcolor" label="TPL_HOT_BOKEH_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC" default="#999999"/>
+					<field name="logoSize" type="text" label="TPL_HOT_BOKEH_FONT_SIZE_LBL" description="TPL_HOT_BOKEH_FONT_SIZE_DESC" default="24" size="3"/>
+					<field name="logoFamily" type="text" default="Arial, Helvetica, sans-serif" label="TPL_HOT_BOKEH_FONT_FAMILY_LBL" description="TPL_HOT_BOKEH_FONT_FAMILY_DESC"/>
+					<field name="logoWeight" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_WEIGHT_LBL" description="TPL_HOT_BOKEH_FONT_WEIGHT_DESC">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="normal">Normal</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="bold">Bold</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+					</field>
+					<field name="logoStyle" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_STYLE_LBL" description="TPL_HOT_BOKEH_FONT_STYLE_DESC">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+					</field>
+					<field name="logoAlign" type="list" default="left" label="TPL_HOT_BOKEH_TEXT_ALIGN_LBL" description="TPL_HOT_BOKEH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="sloganTextSpacer" type="hotspacer" label="TPL_HOT_BOKEH_SLOGAN_SETTINGS_LBL"/>
+					<field name="sloganText" type="text" label="TPL_HOT_BOKEH_SLOGAN_TEXT_LBL" description="TPL_HOT_BOKEH_SLOGAN_TEXT_DESC" default=""/>
+					<field name="sloganColor" type="hotcolor" label="TPL_HOT_BOKEH_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC" default="#999999"/>
+					<field name="sloganSize" type="text" label="TPL_HOT_BOKEH_FONT_SIZE_LBL" description="TPL_HOT_BOKEH_FONT_SIZE_DESC" default="12" size="3"/>
+					<field name="sloganFamily" type="text" default="Arial, Helvetica, sans-serif" label="TPL_HOT_BOKEH_FONT_FAMILY_LBL" description="TPL_HOT_BOKEH_FONT_FAMILY_DESC"/>
+					<field name="sloganWeight" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_WEIGHT_LBL" description="TPL_HOT_BOKEH_FONT_WEIGHT_DESC">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="normal">Normal</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="bold">Bold</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+					</field>
+					<field name="sloganStyle" type="list" default="normal" label="TPL_HOT_BOKEH_FONT_STYLE_LBL" description="TPL_HOT_BOKEH_FONT_STYLE_DESC">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+					</field>
+					<field name="sloganAlign" type="list" default="left" label="TPL_HOT_BOKEH_TEXT_ALIGN_LBL" description="TPL_HOT_BOKEH_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+				<field name="subtabstart2" type="subtabstart" default="" label="TPL_HOT_BOKEH_FEATURES_TOPPANEL_LBL"/>
+					<field name="topPanelSpacer" type="spacer" label="TPL_HOT_BOKEH_TOP_PANEL_DESC"/>
+					<field name="topPanelSwitch" type="flipyesno" default="0" label="TPL_HOT_BOKEH_TOP_PANEL_SWITCH_LBL" description="TPL_HOT_BOKEH_TOP_PANEL_SWITCH_DESC"/>
+					<field name="topPanelOpen" type="text" default="Open" label="TPL_HOT_BOKEH_TOP_PANEL_OPEN_LBL"/>
+					<field name="topPanelClose" type="text" default="Close" label="TPL_HOT_BOKEH_TOP_PANEL_CLOSE_LBL"/>
+					<field name="topPanelButtonWidth" type="text" default="75" label="TPL_HOT_BOKEH_TOP_PANEL_BUTTON_WIDTH_LBL" size="3"/>
+					<field name="topPanelButtonHeight" type="text" default="18" label="TPL_HOT_BOKEH_TOP_PANEL_BUTTON_HEIGHT_LBL" size="3"/>
+					<field name="topPanelButtonBgColor" type="hotcolor" default="#000000" label="TPL_HOT_BOKEH_TOP_PANEL_BUTTON_BG_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="topPanelButtonTextColor" type="hotcolor" default="#FFFFFF" label="TPL_HOT_BOKEH_TOP_PANEL_BUTTON_TEXT_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="topPanelButtonTextSize" type="text" default="10" label="TPL_HOT_BOKEH_TOP_PANEL_BUTTON_TEXT_SIZE_LBL" description="TPL_HOT_BOKEH_FONT_SIZE_DESC" size="3"/> 
+					<field name="topPanelButtonBorderColor" type="hotcolor" default="#666666" label="TPL_HOT_BOKEH_TOP_PANEL_BUTTON_BORDER_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="topPanelButtonBorderRadius" type="text" default="5" label="TPL_HOT_BOKEH_TOP_PANEL_BUTTON_BORDER_RADIUS_LBL" size="3"/>
+					<field name="topPanelBgColor" type="hotcolor" default="#000000" label="TPL_HOT_BOKEH_TOP_PANEL_BG_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="topPanelH3Color" type="hotcolor" default="#CCCCCC" label="TPL_HOT_BOKEH_TOP_PANEL_H3_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+					<field name="topPanelTextColor" type="hotcolor" default="#CCCCCC" label="TPL_HOT_BOKEH_TOP_PANEL_TEXT_COLOR_LBL" description="TPL_HOT_BOKEH_COLOR_DESC"/>
+				<field name="subtabstart3" type="subtabstart" default="" label="TPL_HOT_BOKEH_FEATURES_FONT_RESIZE_LBL"/>
+					<field name="fontResizeSpacer" type="spacer" label="TPL_HOT_BOKEH_FONT_RESIZE_DESC"/>
+					<field name="fontResizeMinus" type="text" default="A-" label="TPL_HOT_BOKEH_FONT_RESIZE_MINUS_LBL" description="TPL_HOT_BOKEH_FONT_RESIZE_MINUS_DESC"/>
+					<field name="fontResizeReset" type="text" default="Reset" label="TPL_HOT_BOKEH_FONT_RESIZE_RESET_LBL" description="TPL_HOT_BOKEH_FONT_RESIZE_RESET_DESC"/>
+					<field name="fontResizePlus" type="text" default="A+" label="TPL_HOT_BOKEH_FONT_RESIZE_PLUS_LBL" description="TPL_HOT_BOKEH_FONT_RESIZE_PLUS_DESC"/>
+					<field name="fontResizeImagesSwitch" type="flipyesno" default="0" label="TPL_HOT_BOKEH_FONT_RESIZE_IMAGES_SWITCH_LBL" description="TPL_HOT_BOKEH_FONT_RESIZE_IMAGES_SWITCH_DESC"/>
+					<field name="fontResizeMinusImage" type="imagelist" directory="templates/hot_bokeh/images" default="font_resize_minus.png" label="TPL_HOT_BOKEH_FONT_RESIZE_MINUS_IMAGE_LBL"/>
+					<field name="fontResizeResetImage" type="imagelist" directory="templates/hot_bokeh/images" default="font_resize_reset.png" label="TPL_HOT_BOKEH_FONT_RESIZE_RESET_IMAGE_LBL"/>
+					<field name="fontResizePlusImage" type="imagelist" directory="templates/hot_bokeh/images" default="font_resize_plus.png" label="TPL_HOT_BOKEH_FONT_RESIZE_PLUS_IMAGE_LBL"/>
+				<field name="subtabstart4" type="subtabstart" default="" label="TPL_HOT_BOKEH_FEATURES_ANALYTICS_LBL"/>
+					<field name="googleWebAnalyticsSpacer" type="spacer" label="TPL_HOT_BOKEH_ANALYTICS_DESC"/>
+					<field name="analyticsSwitch" type="flipyesno" default="0" label="TPL_HOT_BOKEH_ANALYTICS_SWITCH_LBL" description="TPL_HOT_BOKEH_ANALYTICS_SWITCH_DESC"/>
+					<field name="analyticsAccount" type="text" default="" label="TPL_HOT_BOKEH_ANALYTICS_ACCOUNT_LBL" description="TPL_HOT_BOKEH_ANALYTICS_ACCOUNT_DESC"/>
+				<field name="subtabstart5" type="subtabstart" default="" label="TPL_HOT_BOKEH_GOOGLE_WEB_FONTS_LBL"/>
+					<field name="googleWebFontsSpacer" type="spacer" label="TPL_HOT_BOKEH_GOOGLE_WEB_FONTS_DESC"/>
+					<field name="googleWebFontsSpacer2" type="spacer" label="TPL_HOT_BOKEH_GOOGLE_WEB_FONTS_DESC2"/>
+					<field name="googleWebFonts" type="textarea" cols="60" rows="5" default="" label="TPL_HOT_BOKEH_GOOGLE_WEB_FONTS_CODE_LBL" description="TPL_HOT_BOKEH_GOOGLE_WEB_FONTS_CODE_DESC"/>
+				<field name="subtabstart6" type="subtabstart" default="" label="TPL_HOT_BOKEH_SCROLL_TO_TOP_LBL"/>
+					<field name="scrollToTopSpacer" type="spacer" label="TPL_HOT_BOKEH_SCROLL_TO_TOP_SPACER_DESC"/>
+					<field name="scrollToTopSwitch" type="flipyesno" default="0" label="TPL_HOT_BOKEH_SCROLL_TO_TOP_LBL" description="TPL_HOT_BOKEH_SCROLL_TO_TOP_DESC"/>
+					<field name="scrollToTopImageFile" type="imagelist" directory="templates/hot_bokeh/images" label="TPL_HOT_BOKEH_SCROLL_TO_TOP_IMAGE_FILE_LBL"/>
+					<field name="scrollToTopPosition" type="list" default="bottom_right" label="TPL_HOT_BOKEH_SCROLL_TO_TOP_POSITION_LBL" description="TPL_HOT_BOKEH_SCROLL_TO_TOP_POSITION_DESC">
+						<option value="bottom_right">TPL_HOT_BOKEH_SCROLL_TO_TOP_POSITION_BOTTOM_RIGHT</option>
+						<option value="bottom_left">TPL_HOT_BOKEH_SCROLL_TO_TOP_POSITION_BOTTOM_LEFT</option>
+						<option value="top_right">TPL_HOT_BOKEH_SCROLL_TO_TOP_POSITION_TOP_RIGHT</option>
+						<option value="top_left">TPL_HOT_BOKEH_SCROLL_TO_TOP_POSITION_TOP_LEFT</option>
+					</field>
+				<field name="subtabstart7" type="subtabstart" default="" label="TPL_HOT_BOKEH_EQUAL_HEIGHTS_LBL"/>
+					<field name="equalHeightSpacer" type="spacer" label="TPL_HOT_BOKEH_EQUAL_HEIGHT_CLASSES_DESC"/>
+					<field name="equalHeightSpacer2" type="spacer" label="TPL_HOT_BOKEH_EQUAL_HEIGHT_CLASSES_DESC2"/>
+					<field name="equalHeightClasses" type="textarea" cols="50" rows="3" label="TPL_HOT_BOKEH_EQUAL_HEIGHT_CLASSES_LBL" description="TPL_HOT_BOKEH_EQUAL_HEIGHT_CLASSES_DESC"/>
+			</fieldset>
+			<fieldset name="menuconfig" label="TPL_HOT_BOKEH_MENUS">
+			    <field name="mnucfg" type="mnucfg" default="footermenu=none=&amp;mainmenu=none=" label="TPL_HOT_BOKEH_MENUCFG_LBL" description="TPL_HOT_BOKEH_MNUCFG_DESC"/>
+			</fieldset>
+			<fieldset name="mobileoptions" label="TPL_HOT_BOKEH_MOBILE">
+				<field name="enableResponsive" type="list" default="1" label="TPL_HOT_BOKEH_ENABLE_RESPONSIVE_LBL" description="TPL_HOT_BOKEH_ENABLE_RESPONSIVE_DESC">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="enableResponsiveMenu" type="list" default="1" label="TPL_HOT_BOKEH_ENABLE_RESPONSIVE_MENU_LBL" description="TPL_HOT_BOKEH_ENABLE_RESPONSIVE_MENU_DESC">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="responsiveMenuTriggerValue" type="text" default="980" label="TPL_HOT_BOKEH_RESPONSIVE_MENU_TRIGGER_LBL" description="TPL_HOT_BOKEH_RESPONSIVE_MENU_TRIGGER_DESC" size="3"/>
+		    </fieldset>
+			<fieldset name="exportoptions" label="TPL_HOT_BOKEH_EXPORT_OPTIONS">
+			      <field name="export" type="hotexport" default="" label="TPL_HOT_BOKEH_LABEL_EXPORT" description="TPL_HOT_BOKEH_DESC_EXPORT"/>
+			</fieldset>
+	    </fields>
+   </config>
+</extension>

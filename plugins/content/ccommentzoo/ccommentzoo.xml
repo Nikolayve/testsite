@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>System - Zoo CComment</name>
+	<author>Daniel Dimitrov </author>
+	<creationDate>2015-12-17</creationDate>
+	<copyright>Copyright(C) Daniel Dimitrov All rights reserved!</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>services@compojoom.com</authorEmail>
+	<authorUrl>http://compojoom.com</authorUrl>
+	<version>5.3.5</version>
+	<description>This plugin enables you to have comments in Zoo</description>
+	<languages folder="administrator/language">
+		
+	</languages>
+	<files>
+		<file plugin="ccommentzoo">ccommentzoo.php</file>
+	</files>
+	<config>
+
+	</config>
+</extension>

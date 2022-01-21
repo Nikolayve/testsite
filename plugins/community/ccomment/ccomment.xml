@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="community" method="upgrade">
+	<name>Community - CComment</name>
+	<author>Compojoom</author>
+	<creationDate>2015-12-17</creationDate>
+	<copyright>Copyright (C) 2013 - compojoom.com . All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>daniel@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<version>5.3.5</version>
+	<isapplication>true</isapplication>
+	<description>
+		Renders the comment activity in the jomsocial activity stream
+	</description>
+	<languages folder="administrator/language">
+		
+	</languages>
+	<files>
+		<file plugin="ccomment">ccomment.php</file>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="name" type="radio" class="btn-group" default="1" label="Use names"
+				       description="Use names rather than usernames">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

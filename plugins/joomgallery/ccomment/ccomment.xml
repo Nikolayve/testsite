@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="joomgallery" method="upgrade">
+	<name>Joomgallery - CComment</name>
+	<author>Daniel Dimitrov</author>
+	<creationDate>2015-12-17</creationDate>
+	<copyright>Copyright (C) 2008 - 2013 compojoom.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>daniel@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<version>5.3.5</version>
+	<description>Plugin that integrates CComment with Joomgallery</description>
+	<languages folder="administrator/language">
+		
+	</languages>
+	<files>
+		<file plugin="ccomment">ccomment.php</file>
+	</files>
+	<config>
+
+	</config>
+</extension>

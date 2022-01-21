@@ -1,0 +1,82 @@
+/*------------------------------------------------------------------------
+# "Hot Full Carousel" - Joomla module
+# Copyright (C) 2013 HotThemes. All Rights Reserved.
+# License: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+# Author: HotThemes
+# Website: http://www.hotjoomlatemplates.com
+-------------------------------------------------------------------------*/
+
+.hero {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+	
+.hero-carousel article {
+	margin: 0 auto;
+	display: block;
+	float: left;
+	position: relative;
+}
+				
+.hero-carousel-container article {
+	float: left;
+}
+	
+.hero-carousel article img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+			
+.hero-carousel article .contents {
+	position: relative;
+	z-index: 2;
+	list-style: none;
+}
+
+.hero-carousel article a {
+	text-decoration: none;
+}
+
+.hero-carousel article .contents p {
+	display: block !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.hero-carousel-nav {
+	width: 980px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -490px;
+	z-index: 20;
+	display: none;
+}
+
+ul.hero-carousel-nav {
+	padding: 0 !important;
+}
+
+.hero-carousel-nav li {
+    list-style: none !important;
+    background-image:none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+	
+.hero-carousel-nav li a {
+	border: none;
+	outline: none;
+	display: block;
+	float: left;
+	text-decoration: none;
+}
+	
+.hero-carousel-nav li a:active,
+.hero-carousel-nav li a:focus { 
+	border: none;
+	outline: none;
+}

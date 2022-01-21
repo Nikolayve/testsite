@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="file" method="upgrade">
+<name>Русский язык для CСomment</name>
+<packagename>CСomment ru-RU</packagename>
+<version>5.3.4 Pro</version>
+<creationDate>03 сентября 2015</creationDate>
+<packager>aleksius.com</packager>
+<packagerEmail>email@aleksius.com</packagerEmail>
+<packagerurl>http://aleksius.com</packagerurl>
+<tag>ru-RU</tag>
+<author>Хорошевский Алексей</author>
+<authorEmail>email@aleksius.com</authorEmail>
+<authorUrl>http://aleksius.com</authorUrl>
+<description><![CDATA[
+  <div align="center">
+<table border="0" width="90%">
+	<tr>
+		<td width="100%" colspan="2">
+			<div align="center"> <a href="http://aleksius.com/" target="_blank"><img border="0" src="http://aleksius.com/templates/aleksius_com.png" alt="aleksius.com" /></a>
+		  <div align="center"> 
+				<h3>CСomment 5.3.4 Pro:</h3>
+		  </div>
+		  <hr />
+		</td>
+	</tr>
+	<tr>
+		<td width="18%"><u><b>Язык:</b></u></td>
+		<td width="80%">Русский</td>
+	</tr>
+	<tr>
+		<td width="18%"><u><b>Часть сайта:</b></u></td>
+		<td width="80%">Административная и фронтальная</td>
+	</tr>
+	<tr>
+		<td width="18%"><u><b>Автор перевода:</b></u></td>
+		<td width="80%">Хорошевский Алексей</td>
+	</tr>
+	<tr>
+		<td width="18%"><u><b>Сайт:</b></u></td>
+		<td width="80%"><a href="http://aleksius.com" target="_blank">http://aleksius.com</a></td>
+	</tr>
+	<tr>
+		<td width="18%"><u><b>Перевод для версии:</b></u></td>
+		<td width="80%">5.3.4 Pro</td>
+	</tr>
+	<tr>
+		<td width="100%" colspan="2">
+		  <p align="center"><b><font color="#008000">Проверьте сайт <a href="http://aleksius.com/joomla/rusifikatory/rusifikator-compojoom-comment" target="_blank">Aleksius.com</a>, скачайте новую версию перевода данного расширения. Справка и обзор на русском языке «<a href="http://aleksius.com/joomla/rasshireniya/ccomment-pro" target="_blank">Обзор Ccomment Pro. Комментарии для Joomla 2.5 - 3</a>», «<a href="http://aleksius.com/joomla/rasshireniya/plagin-kommentariev-joomla" target="_blank">Обзор Ccomment Pro. Плагин комментариев для Joomla</a>».</font></b></td>
+	</tr>
+</table>
+  </div>]]></description>
+<fileset>
+<files folder="admin" target="administrator/language/ru-RU">
+<filename>ru-RU.com_comment.ini</filename>
+<filename>ru-RU.com_comment.sys.ini</filename>
+<filename>ru-RU.plg_cbusercomments.ini</filename>
+<filename>ru-RU.plg_compojoomcomment_jomsocial.ini</filename>
+<filename>ru-RU.plg_content_joscomment.ini</filename>
+<filename>ru-RU.plg_search_ccomment.ini</filename>
+</files>
+<files folder="site" target="language/ru-RU">
+<filename>ru-RU.com_comment.ini</filename>
+<filename>ru-RU.mod_comments.ini</filename>
+<filename>ru-RU.lib_compojoom.ini</filename>
+<filename>ru-RU.lib_compojoom.sys.ini</filename>
+</files>
+</fileset>
+</extension>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_HOTSPOTS_USER_HOTSPOTS">
+		<message>
+			<![CDATA[COM_HOTSPOTS_USER_HOTSPOTS_DESCRIPTION]]>
+		</message>
+	</layout>
+	<name>COM_HOTSPOTS_USER_HOTSPOTS</name>
+	<description>COM_HOTSPOTS_USER_HOTSPOTS_DESCRIPTION</description>
+	<!-- joomla 1.6-->
+	<fields></fields>
+	<!-- joomla 1.5-->
+	<params></params>
+</metadata>

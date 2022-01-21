@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" method="upgrade" version="2.5">
+    <name>Русский язык для Hotspots</name>
+    <version>4.3.3</version>
+    <creationDate>12 января 2015</creationDate>
+    <author>Хорошевский Алексей</author>
+    <authorEmail>email@aleksius.com</authorEmail>
+    <authorUrl>http://aleksius.com</authorUrl>
+    <copyright>© 2008-2015 - compojoom-com. Все права защищены!</copyright>
+    <license>GNU General Public License версия 2 или новее; смотрите файл LICENSE.txt</license>
+    <packager>http://aleksius.com</packager>
+    <packagerurl>http://aleksius.com</packagerurl>
+    <description><![CDATA[
+  <div align="center">
+    <table border="0" width="90%">
+	    <tr>
+		    <td width="100%" colspan="2">
+			<div align="center"> <a href="http://aleksius.com/" target="_blank"><img border="0" src="http://aleksius.com/templates/aleksius_com.png" alt="aleksius.com" /></a>
+		      <div align="center"> 
+				<h3> Hotspots 4.3.3:</h3>
+		      </div>
+		      <hr />
+		    </td>
+	    </tr>
+	    <tr>
+		    <td width="18%"><u><b>Язык:</b></u></td>
+		    <td width="80%">Русский</td>
+	    </tr>
+	    <tr>
+		    <td width="18%"><u><b>Часть сайта:</b></u></td>
+		    <td width="80%">Административная и фронтальная</td>
+	    </tr>
+	    <tr>
+		    <td width="18%"><u><b>Автор перевода:</b></u></td>
+		    <td width="80%">Хорошевский Алексей</td>
+	    </tr>
+	    <tr>
+		    <td width="18%"><u><b>Сайт:</b></u></td>
+		    <td width="80%"><a href="http://aleksius.com" target="_blank">http://aleksius.com</a></td>
+	    </tr>
+	    <tr>
+		    <td width="18%"><u><b>Перевод для версии:</b></u></td>
+		    <td width="80%">4.3.3</td>
+	    </tr>
+	    <tr>
+		    <td width="100%" colspan="2">
+		      <p align="center"><b><font color="#008000">Проверьте сайт <a href="http://aleksius.com/joomla/rusifikatory/rusifikator-hotspots" target="_blank">Aleksius.com</a>, скачайте новую версию перевода данного расширения. Справка и обзор на русском языке «<a href="http://aleksius.com/joomla/rasshireniya/hotspots" target="_blank">Обзор Hotspots. Карты Google для Joomla</a>».</font></b></td>
+	    </tr>
+    </table>
+  </div>]]></description>
+    <fileset>
+        <files folder="admin" target="administrator/language/ru-RU">
+<filename>ru-RU.com_hotspots.ini</filename>
+<filename>ru-RU.com_hotspots.sys.ini</filename>
+<filename>ru-RU.mod_ccc_hotspots_icons.ini</filename>
+<filename>ru-RU.mod_ccc_hotspots_newsfeed.ini</filename>
+<filename>ru-RU.mod_ccc_hotspots_overview.ini</filename>
+<filename>ru-RU.mod_ccc_hotspots_update.ini</filename>
+<filename>ru-RU.mod_hotspots.ini</filename>
+<filename>ru-RU.mod_hotspots.sys.ini</filename>
+<filename>ru-RU.mod_hotspots_stats.ini</filename>
+<filename>ru-RU.mod_hotspots_stats.sys.ini</filename>
+<filename>ru-RU.plg_hotspots_email.sys.ini</filename>
+<filename>ru-RU.plg_hotspots_jomsocial.ini</filename>
+<filename>ru-RU.plg_hotspots_jomsocial.sys.ini</filename>
+<filename>ru-RU.plg_hotspotslinks_content.sys.ini</filename>
+<filename>ru-RU.plg_plug_hotspots.ini</filename>
+<filename>ru-RU.plg_search_hotspots.sys.ini</filename>
+<filename>ru-RU.plg_hotspots_k2.sys.ini</filename></files>
+<filename>ru-RU.mod_hotspots_list.ini</filename>
+<files folder="frontend" target="language/ru-RU">
+<filename>ru-RU.com_hotspots.ini</filename>
+<filename>ru-RU.lib_compojoom.ini</filename>
+<filename>ru-RU.lib_compojoom.sys.ini</filename>
+</files>
+</fileset>
+</extension>

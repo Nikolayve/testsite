@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------------
+# "Hot Joomla Carousel" Joomla module
+# Copyright (C) 2010 ArhiNet d.o.o. All Rights Reserved.
+# License: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+# Author: HotJoomlaTemplates.com
+# Website: http://www.hotjoomlatemplates.com
+-------------------------------------------------------------------------*/
+.IE button {
+	width:1%;
+	overflow:visible;
+}
+
+.hotcarousel {
+}
+
+.foo {
+	float:left;
+}
+
+.hotcarousel .js .carousel-wrap {
+	vertical-align:middle;
+	margin:0 5px;
+}
+
+.IE .hotcarousel .js .carousel-wrap {
+	display:inline;
+}
+
+.hotcarousel ul {
+	margin:0;
+	padding:0;
+	right: auto !important;
+}
+
+.hotcarousel .js ul li {
+	overflow:hidden;
+	display:inline;
+	float:left;
+	text-align:center;
+	margin:0;
+	padding:0;
+	list-style:none;
+	background:none;
+}
+
+.hotcarousel .carousel-control {
+	overflow:hidden;
+	display:inline-block;
+	vertical-align:middle;
+	width:31px;
+	cursor:pointer;
+	line-height:999px;
+}
+
+.hotcarousel .disabled,.hotcarousel .disabled:hover {
+	cursor:default;
+}
+
+div.carousel-pagination {
+	color:#fff;
+	cursor:pointer;
+	text-align:center;
+}
+
+div.carousel-pagination a {
+	padding:0 6px;
+}

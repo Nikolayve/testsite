@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="hwdmediashare" method="upgrade">
+	<name>HWDMediaShare - Comments (CComment)</name>
+	<creationDate>2015-12-17</creationDate>
+	<author>Daniel Dimitrov</author>
+	<authorEmail>daniel@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<copyright>(C) 2008 - 2013 Compojoom.com</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<version>5.3.5</version>
+	<description>Plugin to enable CComment in HWDMediaShare</description>
+	<files>
+		<file plugin="comments_ccomment">comments_ccomment.php</file>
+	</files>
+	<languages folder="administrator/language">
+		
+	</languages>
+	<config>
+	</config>
+</extension>

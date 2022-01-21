@@ -1,0 +1,79 @@
+﻿/*------------------------------------------------------------------------
+# "Sparky Framework" - Joomla Template Framework
+# Copyright (C) 2013 HotThemes. All Rights Reserved.
+# License: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+# Author: HotThemes
+# Website: http://www.hotjoomlatemplates.com
+-------------------------------------------------------------------------*/
+
+ul.acc {
+	margin:0;
+	padding:0;
+}
+
+.acc li {
+	display:block!important;
+}
+
+.acc ul {
+	margin-top:0!important;
+}
+
+.acc li a {
+	display:block!important;
+	margin:0!important;
+	text-decoration:none;
+	outline: none;
+}
+
+.acc > li > a {
+	margin:0!important;
+}
+
+.acc > li > ul {
+	width:100%!important;
+}
+
+.acc > li > ul {
+	position:static!important;
+}
+
+.acc > li > ul > li ul {
+	position:absolute!important;
+	z-index:10000;
+} 
+
+.acc .ui-icon {
+	display:none!important; 
+}
+
+.acc ul {
+	border:none;
+}
+
+.acc li, .acc li li ul  {
+	padding:5px 10px;
+    margin-bottom:0;
+}
+
+.acc > li {
+    margin-bottom:3px;
+}
+
+.acc > li > ul {
+	margin:0!important;
+	padding:7px 0!important;
+}
+
+.acc li li {
+	border:none;
+    padding:5px 10px;
+}
+
+.acc li a {
+    border:none;
+    background:none;
+}
+
+.acc li a:hover {
+}

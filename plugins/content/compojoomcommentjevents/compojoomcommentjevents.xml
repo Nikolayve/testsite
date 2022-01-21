@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>JEvents - CComment</name>
+	<author>Daniel Dimitrov</author>
+	<creationDate>2015-12-17</creationDate>
+	<copyright>Copyright(C) Compojoom.com . All rights reserved!</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>services@compojoom.com / pelesrb@gmail.com</authorEmail>
+	<authorUrl>www.compojoom.com</authorUrl>
+	<version>5.3.5</version>
+	<description>
+		<![CDATA[ This plugin together with the compojoomComment plugin for JEvents will show a form in your calender entries in JEvents ]]> </description>
+	<files>
+		<file plugin="compojoomcommentjevents">compojoomcommentjevents.php</file>
+	</files>
+</extension>

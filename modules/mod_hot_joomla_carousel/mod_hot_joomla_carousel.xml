@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	  type="module"
+	  version="1.6.0"
+	  client="site"
+	  method="upgrade">
+	  
+	<name>HOT Joomla Carousel</name> 
+	<author>HotJoomlaTemplates.com</author> 
+	<creationDate>2009-11-25</creationDate> 
+	<copyright>Copyright 2010 by ArhiNet d.o.o.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@hotjoomlatemplates.com</authorEmail> 
+	<authorUrl>http://www.hotjoomlatemplates.com</authorUrl> 
+	<version>2.5.3</version> 
+	<description>HOT Joomla Carousel - Free module from HotJoomlaTemplates.com</description>
+
+	<files>
+		<filename module="mod_hot_joomla_carousel">mod_hot_joomla_carousel.php</filename>
+		<filename>index.html</filename>
+		<folder>elements</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_hot_joomla_carousel.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_hot_joomla_gallery/elements">
+			<fieldset name="system" label="LABEL SYSTEM SETTINGS">
+				<field type="loader" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="enablejQuery" type="list" default="1" label="LABEL JQUERY" description="DESC JQUERY">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="moduleWidth" type="text" default="500" label="LABEL WIDTH" description="DESC WIDTH" />
+				<field name="moduleHeight" type="text" default="136" label="LABEL HEIGHT" description="DESC HEIGHT" />
+				<field name="imageFolder" type="text" default="images/sampledata/fruitshop" label="LABEL FOLDER" description="DESC FOLDER" />
+				<field name="imageNumber" type="text" default="3" label="LABEL IMAGES NUMBER" description="DESC IMAGES NUMBER" />
+				<field name="imageWidth" type="text" default="145" label="LABEL IMAGE WIDTH" description="DESC IMAGE WIDTH" />
+				<field name="imageHeight" type="text" default="128" label="LABEL IMAGE HEIGHT" description="DESC IMAGE HEIGHT" />
+				<field name="imageMargin" type="text" default="10" label="LABEL MARGIN" description="DESC MARGIN" />
+				<field name="imagePadding" type="text" default="2" label="LABEL PADDING" description="DESC PADDING" />
+				<field name="imageBorderWidth" type="text" default="2" label="LABEL BORDER WIDTH" description="DESC BORDER WIDTH" />
+				<field name="imageBorderColor" type="hotcolor" default="#000000" label="LABEL BORDER COLOR" description="DESC BORDER COLOR" />
+				<field name="carouselPagination" type="list" default="false" label="LABEL PAGINATION" description="DESC PAGINATION">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="carouselAutoSlide" type="list" default="false" label="LABEL AUTO SLIDE" description="DESC AUTO SLIDE">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+				<field name="carouselAutoSlideInterval" type="text" default="3000" label="LABEL AUTO SLIDE INTERVAL" description="DESC AUTO SLIDE INTERVAL" />
+				<field name="carouselEffect" type="list" default="slide" label="LABEL EFFECT" description="DESC EFFECT">
+					<option value="slide">Slide</option>
+					<option value="fade">Fade</option>
+				</field>
+				<field name="carouselAnimSpeed" type="list" default="normal" label="LABEL ANIM SPEED" description="DESC ANIM SPEED">
+					<option value="slow">Slow</option>
+					<option value="normal">Normal</option>
+					<option value="fast">Fase</option>
+				</field>
+				<field name="carouselDirection" type="list" default="normal" label="LABEL DIRECTION" description="DESC DIRECTION">
+					<option value="horizontal">Horizontal</option>
+					<option value="vertical">Vertical</option>
+				</field>
+				<field name="carouselLoop" type="list" default="false" label="LABEL LOOP" description="DESC LOOP">
+					<option value="true">Enable</option>
+					<option value="false">Disable</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

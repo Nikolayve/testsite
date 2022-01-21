@@ -1,0 +1,1 @@
+var HotspotsMarker = {"id":"4","lat":50.019573,"lng":36.247959,"title":"\u041f\u0430\u0440\u043a \u0413\u043e\u0440\u044c\u043a\u043e\u0433\u043e","description":"<strong>\u041f\u0430\u0440\u043a \u0413\u043e\u0440\u044c\u043a\u043e\u0433\u043e<\/strong><br\/><br\/>\r\n\r\n","icon":"http:\/\/karta-kh\/media\/com_hotspots\/images\/categories\/1454164304_S_agritourism.png"};

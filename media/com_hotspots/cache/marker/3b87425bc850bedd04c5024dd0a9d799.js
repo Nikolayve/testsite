@@ -1,0 +1,1 @@
+var HotspotsMarker = {"id":"8","lat":50.029045,"lng":36.328163,"title":"\u041a\u0430\u0440\u0430\u0432\u0430\u043d","description":"<strong>\u041a\u0430\u0440\u0430\u0432\u0430\u043d<\/strong><br\/><br\/>\r\n\r\n","icon":"http:\/\/karta-kh\/media\/com_hotspots\/images\/categories\/1454220931_S_candy.png"};

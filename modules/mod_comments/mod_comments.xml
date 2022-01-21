@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Latest/Most CompojoomComment</name>
+	<author>Daniel Dimimtrov</author>
+	<creationDate>2015-12-17</creationDate>
+	<copyright>compojoom.com All rights reserved!</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>daniel@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<version>5.3.5</version>
+	<description>
+		<![CDATA[
+	  Display the
+	  <ul>
+		<li>Latest comments</li>
+		<li>Most voting yes comments</li>
+		<li>Most voting no comments</li>
+		<li>Most rated comments</li>
+		<li>Most commented content item</li>
+	  </ul>
+	  of the compojoomComment component.<br /><br />
+	  <b>!CompojoomComment must be installed</b>.
+	]]>
+	</description>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_comments.ini</language>
+	</languages>
+	<files>
+		<file>helper.php</file>
+<folder>language</folder>
+<folder>media</folder>
+<file module="mod_comments">mod_comments.php</file>
+<folder>tmpl</folder>
+	</files>
+
+	<media destination="mod_comments" folder="media/mod_comments">
+		<folder>css</folder>
+<folder>images</folder>
+	</media>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+				<field name="template" type="filelist" default="default" hide_none="1" hide_default="1" label="Choose template" directory="modules/mod_comments/tmpl" filter="" exclude="index" stripext="1" description="Choose the template file to display the latest comments"/>
+
+				<field name="component" type="sql"
+				       default="com_content"
+				       label="Component" multiple="multiple"
+				       query="SELECT component AS value, component AS component FROM #__comment_setting"
+				       filter=""
+				       stripext=""
+				       required="true"
+				       description="Will display comments of the specified component."/>
+
+				<field name="orderby" type="list" default="date" label="Order by" description="">
+					<option value="date">Latest</option>
+					<option value="voting_yes">Most voting yes</option>
+					<option value="voting_no">Most voting no</option>
+					<option value="mostrated">Most rated</option>
+					<option value="mostcommented">Most commented items</option>
+				</field>
+				<field name="time_frame" type="text" default="-1" label="Time frame" description="Set the time frame in days. -1 no limit (all time)" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="maxlines" type="text" default="5" label="Number of rows" description="The number of comments OR content items you want to display." />
+				<field name="@spacer" type="spacer" default="" label="MOST COMMENTED PARAMETERS" description="Only used for Most commented content items" />
+				<field name="linesize" type="text" default="20" label="Line size" description="Number of characters of the content item title line. empty means no limit." />
+				<field name="@spacer" type="spacer" default="" label="COMMENTS PARAMETERS" description="Not used for Most commented content items" />
+				<field name="showname" type="radio" class="btn-group" default="1" label="Show author name" description="Select to hide or show the author name" >
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="showtime" type="radio" default="1" class="btn-group" label="Show comment date" description="Select to hide or show the coment date">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="userSize" type="text" default="20" label="User line size" description="Number of characters of the Date and Username line, to display. 0 means no limit (not recommended)." />
+				<field name="conttitlesize" type="text" default="20" label="Content title size" description="Number of characters of the content title, to display. 0 means no limit (not recommended)." />
+				<field name="commentsize" type="text" default="40" label="Comment size" description="Number of characters of the comment, to display. 0 means no limit (not recommended)." />
+				<field name="date_format" type="text" default="age" label="Date format" description="As for the PHP strftime() function" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="tooltip" type="radio" class="btn-group" default="1" label="Tooltip display" description="Display more comment information when mouse cursor over" >
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="showconttitle" type="radio" class="btn-group" default="0" label="Tooltip content item title" description="Show the title of the content item" >
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="overtitlesize" type="text" default="50" label="Tooltip title size" description="Number of characters of overlay title" />
+				<field name="overcontentsize" type="text" default="100" label="Tooltips content size" description="Number of characters of overlay content" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
